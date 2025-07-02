@@ -1,0 +1,16 @@
+pandas
+numpy
+requests
+python-dotenv
+vaderSentiment
+matplotlib
+scikit-learn
+tensorflow
+notebook
+plotly
+streamlit
+newsapi-python
+yfinance
+datetime
+textblob
+transformers
