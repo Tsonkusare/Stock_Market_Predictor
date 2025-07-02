@@ -1,68 +1,72 @@
-# Stock_Market_Predictor
-📈 Stock Buy/Sell Recommendation App
-This is a Streamlit-based web application that analyzes the top 50 publicly traded companies in the U.S. to provide buy/sell investment recommendations using news sentiment analysis and 7-day price trends. Users can also enter a custom stock ticker to view detailed news sentiment and 1-year historical price data.
+# 📈 Stock Buy/Sell Recommendation App
 
-🚀 Features
-🔍 Analyze Top 50 Stocks
-Automatically evaluates stocks like AAPL, MSFT, TSLA, and more.
+This is a **Streamlit-based web application** that analyzes the top 50 publicly traded companies in the U.S. to provide **buy/sell investment recommendations** using **news sentiment analysis** and **7-day price trends**. Users can also enter a custom stock ticker to view detailed news sentiment and 1-year historical price data.
 
-📰 News Sentiment Analysis
-Fetches the latest headlines and calculates a sentiment score (range: -5 to +5).
+---
 
-📊 Trend-Based Classification
-Uses 7-day stock price trends combined with sentiment to classify action as BUY, SELL, or HOLD.
+## 🚀 Features
 
-📅 1-Year Price Chart
-Visualizes historical price trends for any stock symbol.
+- 🔍 **Analyze Top 50 Stocks**  
+  Automatically evaluates stocks like AAPL, MSFT, TSLA, and more.
 
-🧠 Smart Recommendations
-Combines real-time data and ML-based classification for actionable insights.
+- 📰 **News Sentiment Analysis**  
+  Fetches the latest headlines and calculates a sentiment score (range: -5 to +5).
 
-🛠️ Tech Stack
-Streamlit – UI and app framework
+- 📈 **Trend-Based Classification**  
+  Uses 7-day stock price trends combined with sentiment to classify action as **BUY**, **SELL**, or **HOLD**.
 
-pandas, matplotlib – Data processing and visualization
+- 🗕️ **1-Year Price Chart**  
+  Visualizes historical price trends for any stock symbol.
 
-Custom modules:
+- 🧠 **Smart Recommendations**  
+  Combines real-time data and ML-based classification for actionable insights.
 
-fetch_data.py – For retrieving stock price data
+---
 
-news.py – For gathering news headlines
+## 🛠️ Tech Stack
 
-sentiment.py – For calculating sentiment scores
+- [Streamlit](https://streamlit.io/) – UI and app framework  
+- `pandas`, `matplotlib` – Data processing and visualization  
+- Custom modules:
+  - `fetch_data.py` – For retrieving stock price data
+  - `news.py` – For gathering news headlines
+  - `sentiment.py` – For calculating sentiment scores
+  - `batch_predict.py` – For classifying buy/sell actions
 
-batch_predict.py – For classifying buy/sell actions
+---
 
-📥 Installation
-Clone the repository
+## 📦 Installation
 
-bash
-Copy
-Edit
+Follow these steps to set up the project locally:
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/stock-recommendation-app.git
 cd stock-recommendation-app
-Install dependencies
 
-bash
-Copy
-Edit
+### 2. Set up dependencies
+
+Make sure Python 3.8 or later is installed on your machine.
+
+#### Option A: Install directly
+
+```bash
 pip install -r requirements.txt
-Run the app
 
-bash
-Copy
-Edit
+### 3. Set up environment variables
+
+If your project requires API keys or secrets (e.g., for fetching stock data or news), create a `.env` file in the project root directory and define your variables like this:
+
+```env
+API_KEY=your_stock_data_api_key
+NEWS_API_KEY=your_news_api_key
+OTHER_ENV_VAR=value
+
+
+### 4. Run the Streamlit app
+
+After installing dependencies and setting environment variables, launch the app with:
+
+```bash
 streamlit run app.py
-🖥️ Usage
-On launch, the app automatically analyzes the top 50 stocks.
-
-You can manually enter a stock symbol (e.g., AAPL) to:
-
-View sentiment score from latest news
-
-Read latest headlines
-
-Visualize 1-year price trend
-
-📷 Screenshots
-Top 50 Summary	Custom Symbol View
